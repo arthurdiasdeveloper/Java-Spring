@@ -3,10 +3,8 @@ package POO.Praticando.EntregaModel;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cliente {
-    public String nome;
-    public String cpf;
-    public int telefone;
+public class Cliente extends Pessoa {
+
     private static List<Endereco>  enderecos;
     //com o privete o meu atributo fica protegido e náo è acessivel na classe main
 

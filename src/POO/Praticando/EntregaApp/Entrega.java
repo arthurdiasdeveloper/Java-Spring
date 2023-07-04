@@ -19,6 +19,8 @@ public class Entrega {
         Cliente cliente = new Cliente();
         //dados do cliente
 
+
+
        // if(Cliente.enderecos == null){
          //   Cliente.enderecos = new ArrayList<Endereco>();
         //}
