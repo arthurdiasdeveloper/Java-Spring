@@ -15,10 +15,15 @@ public class Entrega {
 
         Cliente cliente = new Cliente();
         //dados do cliente
-        if(Cliente.enderecos == null){
-            Cliente.enderecos = new ArrayList<Endereco>();
-        }
 
-        //Cliente.enderecos.add(endereco);
+       // if(Cliente.enderecos == null){
+         //   Cliente.enderecos = new ArrayList<Endereco>();
+        //}
+
+        cliente.getEnderecos().add(endereco);
+        System.out.println("Endreco addiconaod a cliente com sucesso!");
+
+        //cliente.enderecos.add(endereco);
+        //System.out.println("Foi adicionado com sucesso!");
     }
 }

@@ -1,5 +1,6 @@
 package POO.Praticando.EntregaModel;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Cliente {
@@ -10,11 +11,15 @@ public class Cliente {
     //com o privete o meu atributo fica protegido e náo è acessivel na classe main
 
 
-    pbulic void setEnderecos(List<Endereco> enderecos){
-        this.enderecos = enderecos;
-    }
+    //public void setEnderecos(List<Endereco> enderecos){
+    //  this.enderecos = enderecos;
+    //  }
+    // nao deixarei o metodo set porque queremos adicinar manualmente os enderecos.
 
-    public List<Endereco> getEnderecos(){
+    public static List<Endereco> getEnderecos(){
+        if(enderecos == null){
+           enderecos = new ArrayList<Endereco>();
+        }
         return enderecos;
     }
 }
